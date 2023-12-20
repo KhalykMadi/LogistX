@@ -1,0 +1,283 @@
+@import 'variables'
+
+* 
+    margin: 0 auto
+    padding: 0
+    box-sizing: border-box
+
+body 
+  font-family: Inter, sans-serif
+  font-size: 16px
+  color: #333
+
+
+.lock
+    overflow: hidden
+
+p, h1, h2, h3, ul, li 
+  text-align: left
+
+ul
+    margin: 0
+
+nav
+    margin: 0
+
+li
+    list-style: none
+
+a
+    margin: 0
+    text-decoration: none
+    border-radius: 12px
+
+// header
+
+header
+    width: 100%
+    position: absolute
+    padding: 30px 0
+
+.menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    ul
+        gap: 15px
+        display: flex
+        flex-wrap: wrap
+        li
+            a
+                font-weight: 400
+                font-size: 16px
+                line-height: 100%
+                color: $primary-white-color
+
+.main-block
+    background: url('../img/main-bg.png')
+    background-size: cover
+    background-repeat: no-repeat
+    padding: 180px 0 0px 0
+    .content
+        display: flex
+        align-items: center
+        .left
+            width: 50%
+            h1
+                font-size: 55px
+                font-weight: 700
+                line-height: 100%
+                color: $primary-white-color
+            p
+                margin-top: 15px
+                font-weight: 400
+                font-size: 16px
+                line-height: 125%
+                color: $primary-gray-color
+            a
+                width: auto
+                max-width: 229px
+                padding: 5px 20px
+                font-size: 16px
+                font-weight: 700
+                line-height: 100%
+                color: #73C739
+                border-radius: 20px
+                border: 2px solid #73C739
+        .right
+            text-align: end
+            width: 50%
+            img
+                max-width: 555px
+                width: 100%
+                height: auto
+                object-fit: cover
+
+// app
+
+.app
+    padding: 80px 0 0 0
+    .content
+        display: flex
+        justify-content: space-between
+        align-items: center
+        .left
+            width: 50%
+            h2
+                font-weight: 700
+                font-size: 50px
+                line-height: 100%
+                color: $primary-black-color
+            p
+                margin-top: 20px
+                font-weight: 400
+                font-size: 16px
+                line-height: 125%
+                color: $primary-gray-color
+            .app-mobile
+                margin-top: 20px
+                display: flex
+                gap: 15px
+                .app-store
+                    margin: 0
+                    width: 143px
+                    height: 42px
+                    object-fit: cover    
+                    background: url('../img/appstore.svg')
+                    background-repeat: no-repeat
+                .google-play
+                    margin: 0
+                    width: 143px
+                    height: 42px
+                    object-fit: cover  
+                    background: url('../img/googleplay.svg')
+        .right
+            width: 50%
+            text-align: end
+
+.benefits
+    padding: 60px 0
+    background: #131F25
+    .content
+        display: flex
+        flex-direction: column
+        align-items: center
+        .header
+            margin-bottom: 30px 
+            h3
+                font-weight: 600
+                font-size: 30px
+                line-height: 100%
+                color: $primary-white-color
+        .main
+            margin: 0
+            display: grid
+            grid-template-columns: 1fr 1fr 1fr
+            gap: 30px
+            .item
+                display: flex
+                flex-direction: column
+                align-items: center
+                p
+                    margin-top: 15px
+                    font-weight: 500
+                    font-size: 25px
+                    line-height: 100%
+                    color: $primary-white-color
+                span
+                    margin-top: 20px
+                    font-weight: 400
+                    font-size: 20px
+                    line-height: 100%
+                    color: $second-gray-color
+                    text-align: center
+                .control
+                    background: url('../img/Online.svg')
+                    width: 150px
+                    height: 150px
+                .automation
+                    background: url('../img/payments.svg')
+                    width: 150px
+                    height: 150px
+                .order
+                    background: url('../img/delivery.svg')
+                    width: 150px
+                    height: 150px
+
+// application
+
+.application
+    padding: 60px 0
+    background: linear-gradient(101.86deg, rgba(227, 227, 227, 0.08) 0%, rgba(242, 241, 241, 0.78) 100%)
+    .content
+        display: flex
+        .left
+            .application-img
+                background: url('../img/Usability.svg')
+                width: 449px
+                height: 449px   
+        .right
+            display: flex
+            align-items: center
+            .form-card
+                padding: 40px 20px 60px 20px
+                max-width: 466px
+                width: 100%
+                height: auto
+                border-radius: 23px
+                box-shadow: 0px 4px 37.79999923706055px 0px #0000001A
+                p
+                    font-weight: 700
+                    font-size: 30px
+                    line-height: 100%
+                    color: $primary-black-color
+                span
+                    font-weight: 400
+                    font-size: 18px
+                    line-height: 100%
+                    color: #999999
+                form
+                    margin-top: 20px
+                    input
+                        margin-bottom: 10px
+                        width: 100%
+                        padding: 10px 10px
+                        border: 1px solid #D7D7D7
+                        border-radius: 10px
+                    button
+                        padding: 20px 0
+                        width: 100%
+                        background: #131F25
+                        color: $primary-white-color
+                        border: none
+                        border-radius: 10px
+    
+footer
+    padding: 30px 0
+    background: #131F25
+    .up
+        display: flex
+        align-items: center
+        padding-bottom: 20px
+        border-bottom: 1px solid #505050
+        .footer-logo
+            margin-right: 40%
+        ul
+            display: flex
+            gap: 20px
+            li
+                a
+                    font-weight: 400
+                    font-size: 16px
+                    line-height: 100%
+                    color: $primary-white-color
+    .down
+        margin-top: 20px
+        display: flex
+        align-items: center
+        p
+            margin: 0
+            font-weight: 400
+            font-size: 16px
+            line-height: 100%
+            color: #6C6C6C
+        .app-mobile
+                display: flex
+                gap: 15px
+                .app-store
+                    margin: 0
+                    width: 143px
+                    height: 42px
+                    object-fit: cover    
+                    background: url('../img/appstore.svg')
+                    background-repeat: no-repeat
+                .google-play
+                    margin: 0
+                    width: 143px
+                    height: 42px
+                    object-fit: cover  
+                    background: url('../img/googleplay.svg')
+
+
+
+                    
