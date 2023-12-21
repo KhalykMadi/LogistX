@@ -63,7 +63,7 @@ header {
   background: url("../img/main-bg.png");
   background-size: cover;
   background-repeat: no-repeat;
-  padding: 180px 0 0px 0;
+  padding: 180px 0 120px 0;
 }
 .main-block .content {
   display: flex;
@@ -158,6 +158,11 @@ header {
   width: 50%;
   text-align: end;
 }
+.app .content .right img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .benefits {
   padding: 60px 0;
@@ -226,9 +231,9 @@ header {
 .application .content {
   display: flex;
 }
-.application .content .left .application-img {
-  background: url("../img/Usability.svg");
-  width: 449px;
+.application .content .left .application-img img {
+  width: 100%;
+  max-width: 449px;
   height: 449px;
 }
 .application .content .right {
@@ -329,4 +334,85 @@ footer .down .app-mobile .google-play {
   -o-object-fit: cover;
      object-fit: cover;
   background: url("../img/googleplay.svg");
+}
+
+@media screen and (max-width: 991px) {
+  .main-block .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .main-block .content .left {
+    width: 100%;
+  }
+  .main-block .content .right {
+    width: 100%;
+    text-align: center;
+  }
+  .app .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  .app .content .left,
+  .app .content .right {
+    width: 100%;
+  }
+  .benefits .content .main {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .application .content {
+    display: flex;
+    flex-direction: column;
+  }
+  .up {
+    display: flex;
+    justify-content: space-between;
+  }
+  .up .footer-logo {
+    margin-right: 0 !important;
+  }
+}
+@media screen and (max-width: 768px) {
+  .app .content .right img {
+    height: 400px;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+}
+@media screen and (max-width: 640px) {
+  footer .up {
+    flex-direction: column !important;
+    gap: 20px;
+  }
+  footer .down {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .menu {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .menu ul {
+    padding: 0;
+  }
+  .benefits .content .header h3 {
+    font-size: 26px;
+  }
+  .benefits .content .main .item p {
+    text-align: center;
+  }
+  .application .content .right .form-card p {
+    font-size: 24px;
+  }
+  .application .content .right .form-card span {
+    font-size: 16px;
+  }
+  footer .up ul {
+    flex-direction: column;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */

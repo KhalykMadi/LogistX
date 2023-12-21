@@ -57,7 +57,7 @@ header
     background: url('../img/main-bg.png')
     background-size: cover
     background-repeat: no-repeat
-    padding: 180px 0 0px 0
+    padding: 180px 0 120px 0
     .content
         display: flex
         align-items: center
@@ -134,6 +134,9 @@ header
         .right
             width: 50%
             text-align: end
+            img
+                width: 100%
+                object-fit: cover
 
 .benefits
     padding: 60px 0
@@ -193,9 +196,10 @@ header
         display: flex
         .left
             .application-img
-                background: url('../img/Usability.svg')
-                width: 449px
-                height: 449px   
+                img
+                    width: 100%
+                    max-width: 449px
+                    height: 449px   
         .right
             display: flex
             align-items: center
@@ -279,5 +283,90 @@ footer
                     background: url('../img/googleplay.svg')
 
 
+// media
 
-                    
+@media screen and (max-width: 991px) 
+    .main-block
+        .content
+            display: flex
+            flex-direction: column
+            gap: 40px
+            .left
+                width: 100%
+            .right
+                width: 100%
+                text-align: center
+    .app
+        .content
+            display: flex
+            flex-direction: column
+            gap: 40px
+            .left,
+            .right
+                width: 100%
+
+    .benefits
+        .content
+            .main
+                display: flex
+                flex-wrap: wrap
+
+    .application
+        .content
+            display: flex
+            flex-direction: column
+
+    .up
+        display: flex
+        justify-content: space-between
+        .footer-logo
+            margin-right: 0 !important
+
+@media screen and (max-width: 768px)
+    .app
+        .content
+            .right
+                img
+                    height: 400px
+                    object-fit: contain
+                
+@media screen and (max-width: 640px)
+    footer
+        .up
+            flex-direction: column !important
+            gap: 20px
+        .down
+            flex-direction: column
+            gap: 20px
+
+@media screen and (max-width: 480px)
+    .menu
+        flex-direction: column
+        gap: 15px
+        ul
+            padding: 0
+
+    .benefits 
+        .content
+            .header
+                h3
+                    font-size: 26px 
+            .main 
+                .item 
+                    p
+                        text-align: center
+
+    .application 
+        .content 
+            .right 
+                .form-card
+                    p
+                        font-size: 24px 
+                    span
+                        font-size: 16px
+        
+    footer
+        .up
+            ul
+                flex-direction: column
+                padding: 0
