@@ -45,6 +45,7 @@ header
     ul
         gap: 15px
         display: flex
+        align-items: center
         flex-wrap: wrap
         li
             a
@@ -75,8 +76,11 @@ header
                 line-height: 125%
                 color: $primary-gray-color
             a
+                display: flex
+                align-items: center
+                gap: 5px
                 width: auto
-                max-width: 229px
+                max-width: 165px
                 padding: 5px 20px
                 font-size: 16px
                 font-weight: 700
@@ -84,6 +88,8 @@ header
                 color: #73C739
                 border-radius: 20px
                 border: 2px solid #73C739
+                svg
+                    margin: 0
         .right
             text-align: end
             width: 50%

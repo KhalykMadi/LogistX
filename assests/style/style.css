@@ -50,6 +50,7 @@ header {
 .menu ul {
   gap: 15px;
   display: flex;
+  align-items: center;
   flex-wrap: wrap;
 }
 .menu ul li a {
@@ -86,8 +87,11 @@ header {
   color: #A3A3A3;
 }
 .main-block .content .left a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   width: auto;
-  max-width: 229px;
+  max-width: 165px;
   padding: 5px 20px;
   font-size: 16px;
   font-weight: 700;
@@ -95,6 +99,9 @@ header {
   color: #73C739;
   border-radius: 20px;
   border: 2px solid #73C739;
+}
+.main-block .content .left a svg {
+  margin: 0;
 }
 .main-block .content .right {
   text-align: end;
