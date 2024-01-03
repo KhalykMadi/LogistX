@@ -404,7 +404,11 @@ footer .down .app-mobile .google-play {
     gap: 15px;
   }
   .menu ul {
+    margin-bottom: 30px;
     padding: 0;
+  }
+  .main-block {
+    padding: 230px 0 120px 0;
   }
   .benefits .content .header h3 {
     font-size: 26px;
